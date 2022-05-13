@@ -110,3 +110,9 @@ header .button li {
 	transform: scale(1.1);
 	transition: all 0.3s ease-in-out;
 }
+
+.icon {
+	font-size: 200px;
+	color: black;
+	margin: 100px 100px;
+}
