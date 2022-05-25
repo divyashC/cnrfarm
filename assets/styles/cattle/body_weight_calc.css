@@ -128,7 +128,7 @@ footer p {
 }
 
 .form input {
-	width: 90%;
+	width: 280px;
 	clear: both;
 	margin: 0 0 20px;
 	padding: 10px;
@@ -146,17 +146,16 @@ footer p {
 	height: 40px;
 }
 
-.or {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-bottom: 20px;
+.result {
+	margin: auto;
+	width: 250px;
+	padding: 15px;
+	text-align: center;
+	background: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.1);
 }
 
-.form .or .hr2 {
-	border-bottom: 1px solid #ddd;
-	clear: both;
-	width: 40%;
-	margin: 0 10px;
-	margin-bottom: 10px;
+.hidden {
+	display: none;
 }
