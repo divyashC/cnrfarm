@@ -31,7 +31,7 @@ sign_in.addEventListener("submit", (e) => {
 
 			setTimeout(() => {
 				sign_in.reset();
-				window.location.href = "/index.html";
+				window.location.href = "/html/index.html";
 			}, 3000);
 		})
 		.catch((error) => {

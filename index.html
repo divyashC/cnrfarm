@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CNR Farm</title>
+    <title>CNR Farm | Sign In</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/styles/homepage.css">
+    <link rel="stylesheet" href="assets/styles/sign_in.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
 
@@ -18,63 +19,37 @@
 
 
     <header>
-        <a class='logo' href="index.html">CNR Farm</a>
+        <a class='logo' href="html/home.html">CNR Farm</a>
         <nav>
             <ul>
-                <li><a class="link_effect" href="index.html">Home</a></li>
+                <li><a class="link_effect" href="html/home.html">Home</a></li>
                 <li><a class="link_effect" href="html/about_us.html">About Us</a></li>
                 <li><a class="link_effect" href="html/dairy.html">Dairy</a></li>
-                <li><a class="link_effect" href="html/poultry.html">Poulty</a></li>
+                <li><a class="link_effect" href="html/poultry.html">Poultry</a></li>
                 <li><a class="link_effect" href="html/piggery.html">Piggery</a></li>
             </ul>
         </nav>
         <ul class="button">
-            <li><a class="sign_in" href="html/sign_in.html">Sign In</a></li>
+            <li><a class="sign_in" href="index.html">Sign In</a></li>
         </ul>
     </header>
+    <div class="form">
+        <h1>Sign In</h1>
 
-    <div class="card_container">
-        <div class="card">
-            <a href="html/dairy.html">
-                <div class="card-image">
-                    <img style="width: 400px; height: 250px; border-radius: 10px;" src="/assets/images/dairy.jpeg"
-                        alt="Dairy">
-                </div>
-                <div class="card_body">
-                    <h3>Cattle</h3>
-                </div>
-            </a>
-        </div>
+        <hr class="hr1">
 
-        <div class="card">
-            <a href="html/poultry.html">
-                <div class="card-image">
-                    <img style="width: 400px; height: 250px; border-radius: 10px;" src="/assets/images/poultry.jpeg"
-                        alt="Poultry">
-                </div>
-                <div class="card_body">
-                    <h3>Poultry</h3>
-                </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="html/piggery.html">
-                <div class="card-image">
-                    <img style="width: 400px; height: 250px; border-radius: 10px;" src="/assets/images/piggery.jpeg"
-                        alt="Piggery">
-                </div>
-                <div class="card_body">
-                    <h3>Piggery</h3>
-                </div>
-            </a>
-        </div>
+        <form id="sign_in_form">
+            <input id="email" type="email" name="email" placeholder="Email" required>
+            <input id="password" type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Sign In">
+        </form>
+
     </div>
 
     <footer>
-
         <nav>
             <ul>
-                <li><a class="link_effect" href="index.html">Home</a></li>
+                <li><a class="link_effect" href="html/home.html">Home</a></li>
                 <li><a class="link_effect" href="html/about_us.html">About Us</a></li>
                 <li><a class="link_effect" href="html/dairy.html">Dairy</a></li>
                 <li><a class="link_effect" href="html/poultry.html">Poultry</a></li>
@@ -90,6 +65,13 @@
 
         <p>Copyright &copy 2022 | CNR FARM | All rights reserved</p>
     </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="scripts/sign_in.js"></script>
+    <script src="scripts/firebase.js"></script>
 
 </body>
 

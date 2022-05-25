@@ -15,10 +15,10 @@
 
 <body>
     <header>
-        <a class='logo' href="/index.html">CNR Farm</a>
+        <a class='logo' href="/html/home.html">CNR Farm</a>
         <nav>
             <ul>
-                <li><a class="link_effect" href="/index.html">Home</a></li>
+                <li><a class="link_effect" href="/html/home.html">Home</a></li>
                 <li><a class="link_effect" href="/html/about_us.html">About Us</a></li>
                 <li><a class="link_effect" href="/html/dairy.html">Dairy</a></li>
                 <li><a class="link_effect" href="/html/poultry.html">Poultry</a></li>
@@ -26,31 +26,27 @@
             </ul>
         </nav>
         <ul class="button">
-            <li><a class="sign_in" href="/html/sign_in.html">Sign In</a></li>
+            <li><a class="sign_in" href="/index.html">Sign In</a></li>
         </ul>
     </header>
 
-<div class="form">
+    <div class="form">
+        <form id="ai_register">
+            <h1>AI Register</h1>
+            <hr class="hr1">
+            <input id="cattle_id" type="text" placeholder="Cow Id *" required>
+            <b>Date of Insemination</b>
+            <input id="date" type="date">
+            <input id="bull_id" type="text" placeholder="Bull Id *" required>
+            <input id="bull_breed" type="text" placeholder="Bull Breed *" required>
+            <input type="submit" value="Submit" class="register_btn">
+        </form>
+    </div>
 
-    <form id="ai_form">
-        <h1>AI Register</h1>
-
-        <hr class="hr1">
-
-        <input id="cow_id" type="text" placeholder="Cow Id *" required>
-        <b>Date of Insemination</b>
-        <input type="date">
-        <input id="bull_id" type="text" placeholder="Bull Id *" required>
-        <input id="bull_breed" type="text" placeholder="Bull Breed *" required>
-
-        
-        <input type="submit" value="Submit" class="register_btn">
-    </form>
-</div>
     <footer>
         <nav>
             <ul>
-                <li><a class="link_effect" href="/index.html">Home</a></li>
+                <li><a class="link_effect" href="/html/home.html">Home</a></li>
                 <li><a class="link_effect" href="/html/about_us.html">About Us</a></li>
                 <li><a class="link_effect" href="/html/dairy.html">Dairy</a></li>
                 <li><a class="link_effect" href="/html/poultry.html">Poultry</a></li>
@@ -67,7 +63,12 @@
         <p>Copyright &copy 2022 | CNR FARM | All rights reserved</p>
     </footer>
 
-
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="/scripts/cattle/ai_register.js"></script>
+    <script src="/scripts/firebase.js"></script>
 </body>
 
 </html>
