@@ -29,30 +29,47 @@
             <li><a class="sign_in" href="/html/sign_in.html">Sign In</a></li>
         </ul>
     </header>
-<div class="form">
-    <h1>Cattle Registry</h1>
 
-    <hr class="hr1">
 
-    <form id="registry__form">
-
-        Cattle ID: &nbsp;
-        <input type="text" placeholder="Enter Cattle ID"><br>
-        
-        Breed: &nbsp:
-        <select id=""></select>
-        <option value=""></option>
-        <option value="Jersey">Jersey</option>
-        <option value="Nublang">Nublang</option>
-        <option value="Karan Fires">Karan Fires</option>
-        <option value="Siri">Siri</option>
-        <option value="Mithun">Mithun</option>
-        <option value="Local">Local</option>
-        <option value="Holstain">Holstain</option>
-        <option value="Jersey"></option>
-        
-    </form>
-
+    <div class="form">
+    
+        <form id="sign_up_form">
+            <h1>Cattle Registry</h1>
+    
+            <hr class="hr1">
+            <input id="cattle_id" type="text" placeholder="Cattle Id *" required>
+            <select name="breed" id="breed">
+                <option class="dimmed" disabled selected>Breed *</option>
+                <option value="Jersey">Jersey</option>
+                <option value="Nublang">Nublang</option>
+                <option value="Karan Fires">Karan Fires</option>
+                <option value="Siri">Siri</option>
+                <option value="Mithun">Mithun</option>
+                <option value="Local">Local</option>
+                <option value="Holstain">Holstain</option>
+                <option value="Jersey X">Jersey X</option>
+            </select>
+            <select id="gender" name="gender">
+                <option class="dimmed" disabled selected>Select Gender *</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <select id="type">
+                <option value="dimmed" disabled selected>Type *</option>
+                <option value="cow">Cow</option>
+                <option value="Tiefer">Tieifer</option>
+                <option value="Bull">Bull</option>
+                <option value="Bull Calf">Bull Calf</option>
+                <option value="Calf">Calf</option>
+                <option value="Steer">Steer</option>
+                <option value="Pregnant">Pregnant</option>
+                <option value="Dry cow">Dry Cow</option>
+                <option value="Lactory cow">Lactory Cow</option>
+            </select>
+            <input id="weight" type="text" placeholder="Body Weight *" required>
+            <input id="age" type="text" placeholder="Age *" required>
+            <input type="submit" value="Register" class="register_btn">
+        </form>
 </div>
 
     <footer>
