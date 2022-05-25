@@ -64,7 +64,8 @@ header .button li {
 
 .bg-img {
     background-image: url("/assets/images/piggery_bg.png");
-    height: 1000px;
+    background-repeat: no-repeat;
+    height: 1250px;
     display: flex;
     flex-direction: column;
     align-items: center;
