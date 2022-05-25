@@ -128,7 +128,7 @@ footer p {
 }
 
 .form input {
-	width: 100%;
+	width: 90%;
 	clear: both;
 	margin: 0 0 20px;
 	padding: 10px;
@@ -159,17 +159,4 @@ footer p {
 	width: 40%;
 	margin: 0 10px;
 	margin-bottom: 10px;
-}
-
-.form .sign_up_redirect a {
-	text-decoration: none;
-	color: #1e3f66;
-	padding: 10px 70px;
-	border: none;
-	background: #ffffff;
-	width: 100%;
-	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-	border-radius: 10px;
-	align-items: center;
-	justify-content: center;
 }
