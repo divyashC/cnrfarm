@@ -29,34 +29,34 @@
             <li><a class="sign_in" href="/html/sign_in.html">Sign In</a></li>
         </ul>
     </header>
-<div class="form">
-    <h1>Body Weight Calculator</h1>
+    <div class="form">
+        <h1>Body Weight Calculator</h1>
 
-    <hr class="hr1">
+        <hr class="hr1">
 
-    <form id="body_weight_form">
+        <form id="body_weight_form">
 
-        <input id="length" type="text" placeholder="Enter Length" required>
-        <input id="girth" type="text" placeholder="Enter Girth" required>
-        <input type="submit" value="Calculate">
+            <input id="length" type="text" placeholder="Enter Length" required>
+            <input id="girth" type="text" placeholder="Enter Girth" required>
+            <input type="submit" value="Calculate">
 
-        <div class="result">
-            <p>Result = 1000g</p>
-        </div>
+            <div class="result hidden" id="result_container">
+                <p id="result">Result: null</p>
+            </div>
 
-        <br><br>
-        <div class="note">
-            <b>NOTE:</b><br><br>
-            <b>Length:</b> is calculated from point<br> of the shoulder till the buttock.<br>
-            <b>Girth:</b> girth of chest of an animal.
+            <br><br>
+            <div class="note">
+                <b>NOTE:</b><br><br>
+                <b>Length:</b> is calculated from point<br> of the shoulder till the buttock.<br>
+                <b>Girth:</b> girth of chest of an animal.
 
-        </div>
+            </div>
 
-        <!-- <input type="submit" value="Sign In" onclick="window.open('../index.html', '_self')"> -->
+            <!-- <input type="submit" value="Sign In" onclick="window.open('../index.html', '_self')"> -->
 
-    </form>
+        </form>
 
-</div>
+    </div>
 
     <footer>
         <nav>
@@ -78,6 +78,7 @@
         <p>Copyright &copy 2022 | CNR FARM | All rights reserved</p>
     </footer>
 
+    <script src="/scripts/cattle/body_weight_clac.js"></script>
 
 </body>
 
