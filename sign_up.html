@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chimm - Sign Up</title>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/assets/css/header_footer.css">
+    <link rel="stylesheet" href="/assets/css/sign_up.css">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+
+    <script src="/scripts/header_footer.js"></script>
+
+</head>
+
+<body>
+
+    <chimm-header />
+
+    <div class="form">
+
+        <form id="sign_up_form">
+            <h1>Sign Up</h1>
+
+            <hr class="hr1">
+
+            <input id="email" type="email" placeholder="Email *" required>
+            <input id="phone_no" type="tel" placeholder="Phone Number *" required />
+            <input id="full_name" type="text" placeholder="Full Name *" required>
+            <br><label for="date">Enter DOB</label>
+            <input id="dob" type="date" placeholder="Date of Birth *" required>
+            <select id="gender" name="gender">
+                <option class="dimmed" disabled selected>Select Gender *</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input id="password" type="password" placeholder="Create Password *" required>
+            <input id="retype_password" type="password" placeholder="Re-enter Password *" required><br>
+            <label for="photo">Choose Profile Picture</label>
+            <input type="file" id="photo" accept="image/*" required />
+            <input type="submit" value="Sign Up" class="sign_up_btn">
+
+        </form>
+
+        <div class=" or">
+            <hr class="hr2"><span>or</span>
+            <hr class="hr2">
+        </div>
+
+        <div class="sign_in_redirect">
+            <a href="sign_in.html">Have an Account ? Sign In</a>
+        </div>
+
+
+    </div>
+
+    <chimm-footer />
+
+</body>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+<script src="/scripts/sign_up.js"></script>
+
+</html>

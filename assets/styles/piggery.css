@@ -75,6 +75,8 @@ header .button li {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+
 }
 
 .card_container .card a {
@@ -122,6 +124,13 @@ header .button li {
     font-size: 200px;
     color: black;
     margin: 100px 100px;
+}
+
+.image-icon {
+    width: 220px;
+    height: 220px;
+    color: black;
+    padding: 2px 90px;
 }
 
 footer {
