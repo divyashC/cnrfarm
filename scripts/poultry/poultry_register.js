@@ -23,6 +23,6 @@ registry_form.addEventListener("submit", function (event) {
 
 	setTimeout(() => {
 		registry_form.reset();
-		window.location.href = "/html/poultry.html";
+		window.location.href = "/html/poultry/poultry_records.html";
 	}, 2000);
 });

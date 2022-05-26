@@ -25,6 +25,6 @@ treatment_form.addEventListener("submit", function (event) {
 
 	setTimeout(() => {
 		treatment_form.reset();
-		window.location.href = "/html/dairy.html";
+		window.location.href = "/html/cattle/treatment_records.html";
 	}, 2000);
 });
