@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/styles/cattle/vaccination_records.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
 
     <style>
         .stock_title {
@@ -17,6 +18,10 @@
             font-weight: bold;
             color: #5c5c5c;
             font-size: 1.3em;
+        }
+
+        .canvas {
+            margin: 100px 400px;
         }
     </style>
 
@@ -46,6 +51,11 @@
     <div class="table_container hidden" id="table_container">
 
     </div>
+
+    <div class="title">
+        <h1>Egg Production Chart</h1>
+    </div>
+    <canvas id="myChart" class="canvas"></canvas>
 
     <footer>
         <nav>

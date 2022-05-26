@@ -61,7 +61,7 @@ database
 						beginAtZero: true,
 						title: {
 							display: true,
-							text: "Weight",
+							text: "Weight in Kgs",
 						},
 					},
 					x: {
