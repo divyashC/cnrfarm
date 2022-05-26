@@ -23,6 +23,6 @@ vaccination_form.addEventListener("submit", function (event) {
 
 	setTimeout(() => {
 		vaccination_form.reset();
-		window.location.href = "/html/dairy.html";
+		window.location.href = "/html/cattle/vaccination_records.html";
 	}, 2000);
 });

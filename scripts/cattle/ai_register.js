@@ -23,6 +23,6 @@ ai_register.addEventListener("submit", function (event) {
 
 	setTimeout(() => {
 		ai_register.reset();
-		window.location.href = "/html/dairy.html";
+		window.location.href = "/html/cattle/ai_records.html";
 	}, 2000);
 });
