@@ -63,7 +63,7 @@ header .button li {
 }
 
 .bg-img {
-    background-image: url("/assets/images/dairy_bg.png");
+    background-image: url("/assets/images/cattle.jpg");
     height: 1000px;
     display: flex;
     flex-direction: column;
