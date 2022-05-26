@@ -93,13 +93,18 @@ footer .icons {
 	padding: 40px 0;
 }
 
+footer .social-icons {
+	margin: 0 10px;
+	font-size: 2em;
+	color: black;
+}
+
 footer p {
 	text-align: center;
 	padding-bottom: 20px;
 	color: #8496a9;
 	font-size: 0.8em;
 }
-
 
 .form {
 	width: 600px;

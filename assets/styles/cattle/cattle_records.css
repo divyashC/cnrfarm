@@ -105,3 +105,48 @@ footer p {
 	color: #8496a9;
 	font-size: 0.8em;
 }
+
+.title {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0;
+}
+
+.table_container {
+	box-shadow: 0px 0px 10px #ddd;
+	background-color: #faf9f9;
+	margin: 50px 180px 100px 180px;
+	padding-bottom: 40px;
+	border-radius: 40px;
+}
+
+.table {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+table {
+	width: 90%;
+	border-collapse: collapse;
+}
+
+.table tr {
+	border-bottom: 1px solid #b7b7b7;
+}
+
+.table td {
+	padding: 15px;
+	margin: 10px;
+	text-align: center;
+}
+
+.table th {
+	color: #5e5e5e;
+	padding: 1.5% 0;
+	margin: 30px;
+	font-size: 1.1em;
+}
