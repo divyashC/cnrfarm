@@ -25,6 +25,7 @@ li span {
 
 .how_it_works {
 	margin: 0 5%;
+	margin-top: -170px;
 }
 
 .how_it_works h1 {
@@ -203,4 +204,7 @@ li span {
 	font-weight: bold;
 	font-size: 0.9em;
 	transition: all 0.3s ease-in-out;
+}
+.image {
+	height: 55px;
 }
