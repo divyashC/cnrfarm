@@ -34,9 +34,10 @@
         <form id="mortality_form">
             <h1>Mortality</h1>
             <hr class="hr1">
+            <input type="text" id="stock_id" placeholder="Stock ID">
             <b>Date Of Death</b>
             <input type="date" id="date">
-            <input type="number" placeholder="No of dead chickens *">
+            <input id="number" type="number" placeholder="No of dead chickens *">
             <input type="submit" value="Submit" class="register_btn">
         </form>
     </div>
@@ -60,6 +61,13 @@
 
         <p>Copyright &copy 2022 | CNR FARM | All rights reserved</p>
     </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="/scripts/firebase.js"></script>
+    <script src="/scripts/poultry/mortality.js"></script>
 
 
 </body>

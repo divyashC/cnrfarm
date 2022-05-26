@@ -35,16 +35,16 @@
             <h1>Poultry Registry</h1>
             <hr class="hr1">
             <input id="stock_id" type="text" placeholder="Stock Id *" required>
-            <input type="number" placeholder="Total Number of Chicken *">
+            <input id="total_chicken" type="number" placeholder="Total Number of Chicken *">
             <B>Date Of Entry</B>
-            <input type="date">
+            <input id="date" type="date">
             <select name="breed" id="breed">
                 <option class="dimmed" disabled selected>Breed *</option>
                 <option value="PLymouth Rock">Plymouth Rock</option>
-                <option value="siem">Siem</option>
-                <option value="unite leghom Chicken">Unite Leghom Chicken</option>
+                <option value="Siem">Siem</option>
+                <option value="Unite Leghom Chicken">Unite Leghom Chicken</option>
                 <option value="Kauray">Kauray</option>
-                <option value="naked neck">Naked Neck</option>
+                <option value="Naked Neck">Naked Neck</option>
                 <option value="Buff Cochin">Buff Cochin</option>
                 <option value="Silkre">Silkre</option>
                 <option value="Kaap">Kaap</option>
@@ -80,6 +80,12 @@
         <p>Copyright &copy 2022 | CNR FARM | All rights reserved</p>
     </footer>
 
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="/scripts/poultry/poultry_register.js"></script>
+    <script src="/scripts/firebase.js"></script>
 
 </body>
 
