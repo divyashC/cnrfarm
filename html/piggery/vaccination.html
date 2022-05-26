@@ -29,42 +29,48 @@
             <p>Admin Portal</p>
         </ul>
     </header>
-<body>
-    <div class="form">
 
-        <form id="vaccination_form">
-            <h1>Vaccination</h1>
+    <body>
+        <div class="form">
 
-            <hr class="hr1">
-
-            <input id="pig_id" type="text" placeholder="Pig Id *" required>
-            <input id="text_field" type="text" placeholder="Vaccination *" required>
-            <input type="date" id="date">
-            <input type="submit" value="Submit" class="register_btn">
-        </form>
-    </div>
-
-    <footer>
-        <nav>
-            <ul>
-                <li><a class="link_effect" href="/html/home.html">Home</a></li>
-                <li><a class="link_effect" href="/html/about_us.html">About Us</a></li>
-                <li><a class="link_effect" href="/html/dairy.html">Dairy</a></li>
-                <li><a class="link_effect" href="/html/poultry.html">Poultry</a></li>
-                <li><a class="link_effect" href="/html/piggery.html">Piggery</a></li>
-            </ul>
-        </nav>
-
-        <div class="icons">
-            <a class="button_effect" href="https://facebook.com"><i class="bi bi-facebook social-icons"></i></a>
-            <a class="button_effect" href="https://twitter.com"><i class="bi bi-twitter social-icons"></i></a>
-            <a class="button_effect" href="https://instagram.com"><i class="bi bi-instagram social-icons"></i></a>
+            <form id="vaccination_form">
+                <h1>Vaccination</h1>
+                <hr class="hr1">
+                <input id="pig_id" type="text" placeholder="Pig Id *" required>
+                <input id="text_field" type="text" placeholder="Vaccination *" required>
+                <input type="date" id="date">
+                <input type="submit" value="Submit" class="register_btn">
+            </form>
         </div>
 
-        <p>Copyright &copy 2022 | CNR FARM | All rights reserved</p>
-    </footer>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a class="link_effect" href="/html/home.html">Home</a></li>
+                    <li><a class="link_effect" href="/html/about_us.html">About Us</a></li>
+                    <li><a class="link_effect" href="/html/dairy.html">Dairy</a></li>
+                    <li><a class="link_effect" href="/html/poultry.html">Poultry</a></li>
+                    <li><a class="link_effect" href="/html/piggery.html">Piggery</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons">
+                <a class="button_effect" href="https://facebook.com"><i class="bi bi-facebook social-icons"></i></a>
+                <a class="button_effect" href="https://twitter.com"><i class="bi bi-twitter social-icons"></i></a>
+                <a class="button_effect" href="https://instagram.com"><i class="bi bi-instagram social-icons"></i></a>
+            </div>
+
+            <p>Copyright &copy 2022 | CNR FARM | All rights reserved</p>
+        </footer>
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+        <script src="/scripts/piggery/pig_vaccination.js"></script>
+        <script src="/scripts/firebase.js"></script>
 
 
-</body>
+    </body>
 
 </html>
