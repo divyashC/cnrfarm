@@ -17,6 +17,19 @@ meat_production_form.addEventListener("submit", function (event) {
 		timestamp: Date.now(),
 	};
 
+	database
+		.ref()
+		.child("piggery/totals")
+		.once("value", function (snapshot) {
+			var piggery_data = snapshot.val();
+			var total = parseFloat(piggery_data.total_meat);
+			total += parseFloat(weight);
+			var meat_data = {
+				total_meat: total,
+			};
+			database_ref.child(`piggery/totals`).set(meat_data);
+		});
+
 	database_ref.child(`piggery/meat_production/${pig_id}`).set(pig_data);
 
 	alert("Registered successfully");
