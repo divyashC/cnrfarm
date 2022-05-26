@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 5px 40px;
+	height: 50px;
+	box-shadow: 0 1px 8px #ddd;
+	transition: all 0.3s ease 0s;
+}
+
+header li {
+	list-style: none;
+	display: inline-block;
+	padding: 0 20px;
+}
+
+header a {
+	text-decoration: none;
+	color: #555;
+	transition: all 0.3s ease 0s;
+}
+
+header .button {
+	margin-left: auto;
+}
+
+header .button li {
+	padding: 5px;
+}
+
+.logo {
+	margin-right: auto;
+}
+.image {
+	height: 55px;
+}
+
+.sign_in {
+	background: #1e3f66;
+	color: #ffffff;
+	border-radius: 8px;
+	padding: 10px 20px;
+	align-items: center;
+	font-weight: bold;
+	font-size: 0.9em;
+	height: 35px;
+}
+
+.sign_in:hover {
+	color: #1e3f66;
+	background: #ffffff;
+	border: 1px solid #1e3f66;
+	border-radius: 8px;
+	padding: 8px 18px;
+	align-items: center;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+footer {
+	background: #e9ebed;
+}
+
+footer nav ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+}
+
+footer nav ul li {
+	padding-top: 50px;
+	margin: 0 10px;
+}
+
+footer nav ul li a {
+	text-decoration: none;
+	color: #1e3f66;
+}
+
+footer .icons {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: center;
+	align-items: center;
+	padding: 40px 0;
+}
+
+footer .social-icons {
+	margin: 0 10px;
+	font-size: 2em;
+	color: black;
+}
+
+footer p {
+	text-align: center;
+	padding-bottom: 20px;
+	color: #8496a9;
+	font-size: 0.8em;
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0;
+}
+
+.table_container {
+	box-shadow: 0px 0px 10px #ddd;
+	background-color: #faf9f9;
+	margin: 50px 180px 100px 180px;
+	padding-bottom: 40px;
+	border-radius: 40px;
+}
+
+.table {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+table {
+	width: 90%;
+	border-collapse: collapse;
+}
+
+.table tr {
+	border-bottom: 1px solid #b7b7b7;
+}
+
+.table td {
+	padding: 15px;
+	margin: 10px;
+	text-align: center;
+}
+
+.table th {
+	color: #5e5e5e;
+	padding: 1.5% 0;
+	margin: 30px;
+	font-size: 1.1em;
+}
