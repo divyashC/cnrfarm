@@ -40,6 +40,10 @@ header .button li {
 	margin-right: auto;
 }
 
+.image {
+	height: 55px;
+}
+
 .sign_in {
 	background: #1e3f66;
 	color: #ffffff;
@@ -188,7 +192,7 @@ select {
 	align-items: center;
 }
 
-table{
+table {
 	border: 2px solid #b3adad;
 	border-collapse: collapse;
 	padding: 3px;

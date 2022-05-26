@@ -40,6 +40,10 @@ header .button li {
 	margin-right: auto;
 }
 
+.image {
+	height: 55px;
+}
+
 .sign_in {
 	background: #1e3f66;
 	color: #ffffff;
