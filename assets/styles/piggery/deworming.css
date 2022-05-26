@@ -40,6 +40,10 @@ header .button li {
 	margin-right: auto;
 }
 
+.image {
+	height: 55px;
+}
+
 .sign_in {
 	background: #1e3f66;
 	color: #ffffff;
@@ -109,6 +113,7 @@ footer p {
 	color: #8496a9;
 	font-size: 0.8em;
 }
+
 .form {
 	width: 600px;
 	margin: 5% auto;
