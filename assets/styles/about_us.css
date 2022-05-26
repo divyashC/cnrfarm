@@ -188,6 +188,11 @@ li span {
 	font-size: 0.9em;
 }
 
+.video{
+	height: 400px;
+	width: 600px;
+}
+
 .video:hover {
 	transform: scale(1.05);
 	transition: all 0.3s ease-in-out;
@@ -207,4 +212,15 @@ li span {
 }
 .image {
 	height: 55px;
+}
+#vision{
+	margin-top: 30px;
+	margin-bottom: -40px;
+}
+#mission{
+	margin-top: 30px;
+	margin-bottom: -40px;
+}
+.walkthrough{
+	margin-top: -30px;
 }
