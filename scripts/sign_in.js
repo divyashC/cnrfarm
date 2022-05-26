@@ -19,13 +19,13 @@ sign_in.addEventListener("submit", (e) => {
 
 			database_ref.child("users/" + user.uid + "/user_data/").update(user_data);
 
-			database
-				.ref()
-				.child("users/" + user.uid + "/user_data")
-				.once("value", function (snapshot) {
-					var curr_user_data = snapshot.val();
-					localStorage.setItem("user_data", JSON.stringify(curr_user_data));
-				});
+			// database
+			// 	.ref()
+			// 	.child("users/" + user.uid + "/user_data")
+			// 	.once("value", function (snapshot) {
+			// 		var curr_user_data = snapshot.val();
+			// 		localStorage.setItem("user_data", JSON.stringify(curr_user_data));
+			// 	});
 
 			alert("Signed In successfully");
 
