@@ -39,6 +39,9 @@ header .button li {
 .logo {
 	margin-right: auto;
 }
+.image{
+	height: 55px;
+}
 
 .sign_in {
 	background: #1e3f66;
