@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CNR Farm | Poultry | Egg Production</title>
+    <title>CNR Farm | Poultry | Mortality Records</title>
     <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/styles/poultry/egg_production.css">
+    <link rel="stylesheet" href="/assets/styles/cattle/vaccination_records.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
 </head>
 
-<body>
+<iv>
     <header>
         <a class='logo' href="/html/home.html">CNR Farm</a>
         <nav>
@@ -29,22 +29,19 @@
             <p>Admin Portal</p>
         </ul>
     </header>
-    <div class="form">
-        <form id="egg_production_form">
-            <h1>Egg Production</h1>
-            <hr class="hr1">
-            <input type="text" placeholder="Stock Id*" id="stock_id">
-            <input type="number" placeholder="Enter Day (eg: 1, 2, 3)" id="day_number">
-            <input type="date" id="date">
-            <input type="number" placeholder="Total Eggs *" id="total_eggs">
-            <input type="submit" value="Submit" class="register_btn">
-        </form>
+
+    <div class="title">
+        <h1>Mortality Records</h1>
+    </div>
+
+    <div class="table_container hidden" id="table_container">
+
     </div>
 
     <footer>
         <nav>
             <ul>
-                <li><a class="link_effect" href="/home/home.html">Home</a></li>
+                <li><a class="link_effect" href="/html/home.html">Home</a></li>
                 <li><a class="link_effect" href="/html/about_us.html">About Us</a></li>
                 <li><a class="link_effect" href="/html/dairy.html">Dairy</a></li>
                 <li><a class="link_effect" href="/html/poultry.html">Poultry</a></li>
@@ -61,14 +58,20 @@
         <p>Copyright &copy 2022 | CNR FARM | All rights reserved</p>
     </footer>
 
+    </body>
+
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
     <script src="/scripts/firebase.js"></script>
-    <script src="/scripts/poultry/egg_production.js"></script>
+    <script src="/scripts/poultry/mortality_records.js"></script>
 
-
-</body>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="/scripts/firebase.js"></script>
+    <script src="/scripts/poultry/egg_production_records.js"></script>
 
 </html>
