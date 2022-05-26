@@ -24,4 +24,5 @@ database
 		table_HTML_code += piggery_tr_list;
 		table_HTML_code += `</table></div>`;
 		document.getElementById("table_container").innerHTML = table_HTML_code;
-	});
+	})
+	.join("");
