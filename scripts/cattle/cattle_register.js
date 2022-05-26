@@ -27,6 +27,6 @@ registry_form.addEventListener("submit", function (event) {
 
 	setTimeout(() => {
 		registry_form.reset();
-		window.location.href = "/html/cattle/cat_records.html";
+		window.location.href = "/html/cattle/cattle_records.html";
 	}, 2000);
 });
