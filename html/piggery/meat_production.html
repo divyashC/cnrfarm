@@ -33,10 +33,10 @@
         <form id="meat_production_form">
             <h1>Meat Production</h1>
             <hr class="hr1">
-            <input type="text" placeholder="Pig Id *">
-            <input type="number" placeholder="Weight *">
+            <input id="pig_id" type="text" placeholder="Pig Id *">
+            <input id="weight" type="number" placeholder="Weight *">
             <input type="date" id="date">
-            <input type="number" placeholder="Week">
+            <input id="week_number" type="number" placeholder="Week">
             <input type="submit" value="Submit" class="register_btn">
         </form>
     </div>
@@ -60,6 +60,13 @@
 
         <p>Copyright &copy 2022 | CNR FARM | All rights reserved</p>
     </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="/scripts/firebase.js"></script>
+    <script src="/scripts/piggery/meat_production.js"></script>
 
 
 </body>

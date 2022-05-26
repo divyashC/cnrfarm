@@ -7,15 +7,15 @@ deworming_form.addEventListener("submit", function (event) {
 
 	var database_ref = database.ref();
 
-	var poultry_data = {
+	var pig_data = {
 		pig_id: pig_id,
 		date: date,
 		timestamp: Date.now(),
 	};
 
-	database_ref.child(`piggery/deworming_records/${pig_id}`).set(poultry_data);
+	database_ref.child(`piggery/deworming_records/${pig_id}`).set(pig_data);
 
-	alert("Pig Registered successfully");
+	alert("Registered successfully");
 
 	setTimeout(() => {
 		deworming_form.reset();

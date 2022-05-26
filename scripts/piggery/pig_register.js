@@ -10,7 +10,7 @@ registry_form.addEventListener("submit", function (event) {
 
 	var database_ref = database.ref();
 
-	var poultry_data = {
+	var pig_data = {
 		pig_id: pig_id,
 		gender: gender,
 		type: type,
@@ -19,7 +19,7 @@ registry_form.addEventListener("submit", function (event) {
 		timestamp: Date.now(),
 	};
 
-	database_ref.child(`piggery/piggery_records/${pig_id}`).set(poultry_data);
+	database_ref.child(`piggery/piggery_records/${pig_id}`).set(pig_data);
 
 	alert("Pig Registered successfully");
 
