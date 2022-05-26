@@ -17,9 +17,7 @@ egg_production_form.addEventListener("submit", function (event) {
 		timestamp: Date.now(),
 	};
 
-	database_ref
-		.child(`poultry/egg_production/${stock_id}/${day_number}`)
-		.set(poultry_data);
+	database_ref.child(`poultry/egg_production/${stock_id}`).set(poultry_data);
 
 	alert("Egg Production Registered successfully");
 
