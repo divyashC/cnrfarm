@@ -39,7 +39,7 @@ header .button li {
 .logo {
 	margin-right: auto;
 }
-.image{
+.image {
 	height: 55px;
 }
 
@@ -160,4 +160,11 @@ footer p {
 	padding-bottom: 20px;
 	color: #8496a9;
 	font-size: 0.8em;
+}
+
+.footer_fixed {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }

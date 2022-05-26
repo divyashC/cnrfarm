@@ -64,6 +64,10 @@ header .button li {
 
 footer {
 	background: #e9ebed;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 footer nav ul {
