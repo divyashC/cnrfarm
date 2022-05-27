@@ -18,7 +18,7 @@ treatment_form.addEventListener("submit", function (event) {
 	};
 
 	database_ref
-		.child(`cattle/treatment_records/${cattle_id}`)
+		.child(`cattle/treatment_records/${cattle_id}/${date}`)
 		.set(treatment_data);
 
 	alert("Treatment Recorded successfully");

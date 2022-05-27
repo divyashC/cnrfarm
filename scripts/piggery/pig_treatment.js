@@ -17,7 +17,9 @@ treatment_form.addEventListener("submit", function (event) {
 		timestamp: Date.now(),
 	};
 
-	database_ref.child(`piggery/treatment_records/${pig_id}`).set(treatment_data);
+	database_ref
+		.child(`piggery/treatment_records/${pig_id}/${date}`)
+		.set(treatment_data);
 
 	alert("Treatment Recorded successfully");
 
