@@ -51,6 +51,24 @@ database
 			}
 		}
 
+		var unique_date_weight = {};
+		for (let i = 0; i < unique_date.length; i++) {
+			unique_date_weight[unique_date[i]] = unique_weight[i];
+		}
+
+		var sorted_date_weight = {};
+		var sorted_date = Object.keys(unique_date_weight).sort();
+		for (let i = 0; i < sorted_date.length; i++) {
+			sorted_date_weight[sorted_date[i]] = unique_date_weight[sorted_date[i]];
+		}
+
+		unique_date = [];
+		unique_weight = [];
+		for (let i = 0; i < sorted_date.length; i++) {
+			unique_date.push(sorted_date[i]);
+			unique_weight.push(sorted_date_weight[sorted_date[i]]);
+		}
+
 		const data = {
 			labels: unique_date,
 			datasets: [
