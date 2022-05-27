@@ -16,7 +16,7 @@ vaccination_form.addEventListener("submit", function (event) {
 	};
 
 	database_ref
-		.child(`poultry/vaccination_records/${stock_id}`)
+		.child(`poultry/vaccination_records/${stock_id}/${date}`)
 		.set(poultry_data);
 
 	alert("Vaccination Registered successfully");

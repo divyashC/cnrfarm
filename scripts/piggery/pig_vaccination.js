@@ -15,7 +15,9 @@ vaccination_form.addEventListener("submit", function (event) {
 		timestamp: Date.now(),
 	};
 
-	database_ref.child(`piggery/vaccination_records/${pig_id}`).set(piggery_data);
+	database_ref
+		.child(`piggery/vaccination_records/${pig_id}/${date}`)
+		.set(piggery_data);
 
 	alert("Vaccination Registered successfully");
 

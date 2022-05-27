@@ -16,7 +16,7 @@ vaccination_form.addEventListener("submit", function (event) {
 	};
 
 	database_ref
-		.child(`cattle/vaccination_records/${cattle_id}`)
+		.child(`cattle/vaccination_records/${cattle_id}/${date}`)
 		.set(cattle_data);
 
 	alert("Vaccination Registered successfully");

@@ -20,10 +20,10 @@ database
 				for (let i = 0; i < keys.length; i++) {
 					k = keys[i];
 					cattle_code_part += `<tr>
-                    <td>${cattle.cattle_id}</td>
-                    <td>${cattle.date}</td>
-                    <td>${cattle.diagnosis}</td>
-                    <td>${cattle.medicine}</td>
+                    <td>${cattle[k].cattle_id}</td>
+                    <td>${cattle[k].date}</td>
+                    <td>${cattle[k].diagnosis}</td>
+                    <td>${cattle[k].medicine}</td>
                 </tr>`;
 				}
 				cattle_code_part += `</table></div>`;
