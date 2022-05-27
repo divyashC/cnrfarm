@@ -28,7 +28,7 @@ database
 											<td>${piggery[k].weight} kgs</td>
 										</tr>`;
 					date.push(piggery[k].date);
-					weight.push(piggery[k].weight);
+					weight.push(parseFloat(piggery[k].weight));
 				}
 				piggery_code_part += `</table></div><br><br>`;
 				return piggery_code_part;
@@ -40,14 +40,25 @@ database
 		const ctx = document.getElementById("myChart").getContext("2d");
 		const labels = ["January", "February", "March", "April", "May", "June"];
 
+		var unique_date = [];
+		var unique_weight = [];
+		for (let i = 0; i < date.length; i++) {
+			if (unique_date.indexOf(date[i]) == -1) {
+				unique_date.push(date[i]);
+				unique_weight.push(weight[i]);
+			} else {
+				unique_weight[unique_date.indexOf(date[i])] += weight[i];
+			}
+		}
+
 		const data = {
-			labels: date,
+			labels: unique_date,
 			datasets: [
 				{
 					label: "Weight in Kgs",
 					backgroundColor: "#1e3f66",
 					borderWidth: 3,
-					data: weight,
+					data: unique_weight,
 				},
 			],
 		};
