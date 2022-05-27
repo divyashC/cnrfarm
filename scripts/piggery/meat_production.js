@@ -30,7 +30,7 @@ meat_production_form.addEventListener("submit", function (event) {
 			database_ref.child(`piggery/totals`).set(meat_data);
 		});
 
-	database_ref.child(`piggery/meat_production/${pig_id}`).set(pig_data);
+	database_ref.child(`piggery/meat_production/${pig_id}/${date}`).set(pig_data);
 
 	alert("Registered successfully");
 
