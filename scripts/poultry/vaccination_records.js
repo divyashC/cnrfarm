@@ -8,7 +8,7 @@ database
 		var poultry_tr_list = Object.keys(poultry_data)
 			.map(function (key) {
 				var poultry = poultry_data[key];
-				var poultry_code_part = `<div class="table">
+				var poultry_code_part = `<br><br><div class="table">
                         <table>
                             <tr>
                                 <th>Stock ID</th>
@@ -24,7 +24,7 @@ database
                     <td>${poultry[k].remarks}</td>
                 </tr>`;
 				}
-				poultry_code_part += `</table></div>`;
+				poultry_code_part += `</table></div><br><br>`;
 				return poultry_code_part;
 			})
 			.join("");

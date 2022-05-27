@@ -8,7 +8,7 @@ database
 		var cattle_tr_list = Object.keys(cattle_data)
 			.map(function (key) {
 				var cattle = cattle_data[key];
-				var cattle_code_part = `<div class="table">
+				var cattle_code_part = `<br><br><div class="table">
                         <table>
                             <tr>
                                 <th>Cattle ID</th>
@@ -24,7 +24,7 @@ database
 											<td>${cattle[k].text_field}</td>
                 						</tr>`;
 				}
-				cattle_code_part += `</table></div>`;
+				cattle_code_part += `</table></div><br><br>`;
 				return cattle_code_part;
 			})
 			.join("");

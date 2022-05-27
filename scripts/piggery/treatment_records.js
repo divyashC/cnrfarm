@@ -8,7 +8,7 @@ database
 		var piggery_tr_list = Object.keys(piggery_data)
 			.map(function (key) {
 				var piggery = piggery_data[key];
-				var piggery_code_part = `<div class="table">
+				var piggery_code_part = `<br><br><div class="table">
 										<table>
 											<tr>
 												<th>Pig ID</th>
@@ -26,7 +26,7 @@ database
                     <td>${piggery[k].medicine}</td>
                 </tr>`;
 				}
-				piggery_code_part += `</table></div>`;
+				piggery_code_part += `</table></div><br><br>`;
 				return piggery_code_part;
 			})
 			.join("");
