@@ -23,7 +23,7 @@ database
 
 				for (let i = 1; i < cattle.length; i++) {
 					date.push(cattle[i].date);
-					milk.push(parseInt(cattle[i].milk_quantity));
+					milk.push(parseFloat(cattle[i].milk_quantity));
 					cattle_code_part += `<tr>
                                         <td>${cattle[i].cattle_id}</td>
                                         <td>${cattle[i].day_number}</td>
